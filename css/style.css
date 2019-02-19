@@ -1,0 +1,354 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+    font-family: 'PT Sans', sans-serif;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    border: none;
+    background: none;
+    outline: none;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+span {
+    font-family: inherit;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * WRAPPERS * * * * * * * * * * * * * * * * * * * * * * * * *  */
+
+.wrapper {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 15px;
+    margin: auto;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * BUTTONS * * * * * * * * * * * * * * * * * * * * * * * * *  */
+
+.btn-white {
+    background: #fff;
+    color: #45a445;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 0.25em 2em;
+}
+
+.btn-green {
+    background: #45a445;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 0.25em 2em;
+    transition: 0.2s;
+}
+
+.btn-green:hover {
+    background: #2a7e2a;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * HEADER * * * * * * * * * * * * * * * * * * * * * * * * *  */
+
+.header {
+    background: #45a445;
+    padding: 15px 0;
+}
+
+.header .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header h1 {
+    font-size: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.header-phone {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.header-numbers div {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-numbers div a {
+    margin-left: 15px;
+}
+
+.header-numbers div a i {
+    color: #fff;
+    font-size: 22px;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * SHOWCASE * * * * * * * * * * * * * * * * * * * * * * * * *  */
+
+.showcase {
+    padding: 50px 0;
+}
+
+.showcase .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.showcase-card {
+    border: 1px solid #45a445;
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin: 10px 10px;
+    transition: 0.2s;
+    background: #fff;
+    cursor: pointer;
+}
+
+.showcase-photo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+.showcase-photo img {
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.showcase-name {
+    font-weight: 700;
+}
+
+.showcase-about ul li {
+    font-size: 14px;
+    color: #9c9c9c;
+}
+
+.showcase-price {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.showcase-card .btn-green {
+    padding: 0.5em 1em;
+    margin-top: 15px;
+}
+
+.showcase-card:hover {
+    transform: scale(1.1);
+    border: none;
+
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * ADVANTAGES * * * * * * * * * * * * * * * * * * * * * * * * *  */
+
+.advantages {
+    background: #45a445;
+    padding: 30px 0;
+}
+
+.advantages .wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.advantages-card {
+    display: flex;
+    align-items: center;
+    margin: 0 15px;
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.advantages-card span {
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.round-wrap {
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-width: 70px;
+    max-width: 70px;
+    height: 70px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.round-wrap i {
+    color: #45a445;
+    font-size: 42px;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * USAGE * * * * * * * * * * * * * * * * * * * * * * * * *  */
+
+.usage {
+    padding: 50px 0;
+}
+
+.usage img {
+    float: right;
+    max-width: 100%;
+}
+
+.usage h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * LIKE FOOTER * * * * * * * * * * * * * * * * * * * * * * * * *  */
+
+.like-footer {
+    background: #45a445;
+}
+
+.like-footer .wrapper {
+    display: flex;
+    min-height: 400px;
+    align-items: center;
+
+}
+
+.like-footer h2 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    margin-right: 20px;
+    flex-basis: 70%;
+}
+
+.like-footer form {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    flex-basis: 30%;
+}
+
+.like-footer form input {
+    border: 1px solid #ececec;
+    outline: none;
+    padding: 0.75em 1em;
+
+    margin-bottom: 20px;
+}
+
+.like-footer form button {
+    padding: 0.75em 1em;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * CONTACTS PAGE * * * * * * * * * * * * * * * * * * * * */
+
+.contacts {
+    padding: 50px 0;
+}
+
+.contacts .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.contacts .section-title {
+    margin-bottom: 50px;
+}
+
+.contacts-map {
+    width: 50%;
+}
+
+.contacts-map iframe {
+    border: none;
+    width: 100%;
+}
+/* * * * * * * * * * * * * * * * * * * * * * * * * * MEDIA * * * * * * * * * * * * * * * * * * * * * * * * *  */
+
+@media screen and (max-width: 768px) {
+    .header .wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header h1 {
+        font-size: 24px;
+        text-align: center;
+
+    }
+    .like-footer {
+        padding: 50px 0;
+    }
+    .like-footer .wrapper {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .like-footer form {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .contacts .wrapper {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .contacts-map {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .contacts .section-title {
+        margin-bottom: 30px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .header h1 {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    .header-phone {
+        font-size: 22px;
+    }
+}
